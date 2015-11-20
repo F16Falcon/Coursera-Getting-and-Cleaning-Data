@@ -2,14 +2,14 @@ Code Book
 
 This Code Book describes the process used to collect and transform (rearrange and clean) data from eight files downloaded from a University of Cal, Irvine website (http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones). 
 Overview of the Data Set
-Experiments were performed for ìHuman Activity Recognitionî on a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) while wearing a smartphone (Samsung Galaxy S II) on their waists. The experimenters captured 3-axial linear acceleration and 3-axial angular velocity measurements from the 30 volunteers. The resulting dataset was randomly partitioned into two sets, where 70% of the volunteers were selected for generating the training data and 30% the test data. 
+Experiments were performed for ‚ÄúHuman Activity Recognition‚Äù on a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) while wearing a smartphone (Samsung Galaxy S II) on their waists. The experimenters captured 3-axial linear acceleration and 3-axial angular velocity measurements from the 30 volunteers. The resulting dataset was randomly partitioned into two sets, where 70% of the volunteers were selected for generating the training data and 30% the test data. 
 
 The data set is comprised of the following eight files:
-ï activity_labels_txt: this file contains the six activities performed by the 30 subjects
-ï subject_test.txt and subject_train.txt: these files contain numbers from 1 to 30 representing the group of 30 volunteers. The test file contains 9    subjects consistent with the 30% who generated the test data, while the train file contains 21 subjects who generated the data for the training data.
-ï features.txt: this file contains the set of the 561 variable names that were estimated from experiment. (See section under Feature Selection for   additional information)
-ï x_train.txt and x_test.txt: these files contain the measurements for each variable estimated in the features file obtained from the group of 30   subjects. It is decomposed into two groups to form training and test data.
-ï y_train.txt and y_test.txt: these files contain the numbers from 1 through 6 corresponding to the six performance activities (e.g., 1 corresponds to   ìWALKINGî).  The two files contain 10,299 rows of number from 1 through 6.
+‚Ä¢ activity_labels_txt: this file contains the six activities performed by the 30 subjects
+‚Ä¢ subject_test.txt and subject_train.txt: these files contain numbers from 1 to 30 representing the group of 30 volunteers. The test file contains 9    subjects consistent with the 30% who generated the test data, while the train file contains 21 subjects who generated the data for the training data.
+‚Ä¢ features.txt: this file contains the set of the 561 variable names that were estimated from experiment. (See section under Feature Selection for   additional information)
+‚Ä¢ x_train.txt and x_test.txt: these files contain the measurements for each variable estimated in the features file obtained from the group of 30   subjects. It is decomposed into two groups to form training and test data.
+‚Ä¢ y_train.txt and y_test.txt: these files contain the numbers from 1 through 6 corresponding to the six performance activities (e.g., 1 corresponds to   ‚ÄúWALKING‚Äù).  The two files contain 10,299 rows of number from 1 through 6.
 
 Feature Selection 
 
@@ -76,7 +76,7 @@ In order to make the variable names more meaningful, I reformatted them to displ
 
 Description of Result
 
-The result of the script is the production of two files. The first file is the consolidation of the eight files from the UCI website into a single, cleaned data set named tidy1.txt. In addition to providing a cleaned data set, the tidy1.txt file filters the data along the variable names that contain measurements of the mean or standard deviation.  The tidy1.txt file contains 10,299 rows and 88 columns, where the first two columns display the ìActivityî and ìSubject,î respectively. The other columns display 86 of the 561 estimated variable names from the features.txt data set, which measures the mean or standard deviation.
+The result of the script is the production of two files. The first file is the consolidation of the eight files from the UCI website into a single, cleaned data set named tidy1.txt. In addition to providing a cleaned data set, the tidy1.txt file filters the data along the variable names that contain measurements of the mean or standard deviation.  The tidy1.txt file contains 10,299 rows and 88 columns, where the first two columns display the ‚ÄúActivity‚Äù and ‚ÄúSubject,‚Äù respectively. The other columns display 86 of the 561 estimated variable names from the features.txt data set, which measures the mean or standard deviation.
 
-The second file created is derived from the tidy1.txt file and contains the same 88 columns from the tidy1.txt file. However, it takes the average of each variable for each activity and each subject, resulting in a file 180 rows and 88 columns.
+The second file created named tidy2.txt is derived from the tidy1.txt file and contains the same 88 columns from the tidy1.txt file. However, it takes the average of each variable for each activity and each subject, resulting in a file 180 rows and 88 columns.
 
