@@ -80,5 +80,5 @@ Description of Results
 
 The result of the script is the production of a text file called "tidy." An initial data set is created by consolidating eight files from the UCI website into a single, cleaned data set. This cleaned data set filters the data along the variable names that contain measurements of the mean or standard deviation.  The resulting data set contains 10,299 rows and 88 columns, where the first two columns display the “Activity” and “Subject,” respectively. The other columns display 86 of the 561 estimated variable names from the features.txt data set, which measures the mean or standard deviation.
 
-The final desired data set is displayed in the tidy.txt file derived from the mreged and cleaned data set mentioned above. The tidy.txt file contains the same 88 columns mentioned above, however, it takes the average of each variable for each activity and each subject, resulting in a file 180 rows and 88 columns.
+The final desired data set is displayed in the tidy.txt file derived from the merged and cleaned data set mentioned above. The tidy.txt file contains the same 88 columns mentioned above, however, it takes the average of each variable for each activity and each subject, resulting in a file 180 rows and 88 columns.
 
