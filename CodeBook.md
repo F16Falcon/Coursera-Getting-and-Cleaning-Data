@@ -74,11 +74,11 @@ The complete list of the 561 variables of each feature vector is available in 'f
 
 Simplification of Variable Names
 
-In order to make the variable names more meaningful, I reformatted them to display the base measurement (e.g., Body Acceleration) and the domain (e.g., time or frequency). For example, instead of  tBodyAcc-mean()-X, the variable name was transformed to                                          Body Acceleration (time) MeanX to reflect the variable estimated along the domain (time or frequency).
+In order to make the variable names more meaningful, I reformatted them to display the base measurement (e.g., Body Acceleration) and the domain (e.g., time or frequency). For example, instead of  tBodyAcc-mean()-X, the variable name was transformed to Body Acceleration (time) MeanX to reflect the variable estimated along the domain (time or frequency).
 
 Description of Results
 
-The result of the script is the production of two files. The first file is the consolidation of the eight files from the UCI website into a single, cleaned data set named tidy1.txt. In addition to providing a cleaned data set, the tidy1.txt file filters the data along the variable names that contain measurements of the mean or standard deviation.  The tidy1.txt file contains 10,299 rows and 88 columns, where the first two columns display the “Activity” and “Subject,” respectively. The other columns display 86 of the 561 estimated variable names from the features.txt data set, which measures the mean or standard deviation.
+The result of the script is the production of a text file called "tidy." An initial data set is created by consolidating eight files from the UCI website into a single, cleaned data set. This cleaned data set filters the data along the variable names that contain measurements of the mean or standard deviation.  The resulting data set contains 10,299 rows and 88 columns, where the first two columns display the “Activity” and “Subject,” respectively. The other columns display 86 of the 561 estimated variable names from the features.txt data set, which measures the mean or standard deviation.
 
-The second file created named tidy2.txt is derived from the tidy1.txt file and contains the same 88 columns from the tidy1.txt file. However, it takes the average of each variable for each activity and each subject, resulting in a file 180 rows and 88 columns.
+The final desired data set is displayed in the tidy.txt file derived from the mreged and cleaned data set mentioned above. The tidy.txt file contains the same 88 columns mentioned above, however, it takes the average of each variable for each activity and each subject, resulting in a file 180 rows and 88 columns.
 
