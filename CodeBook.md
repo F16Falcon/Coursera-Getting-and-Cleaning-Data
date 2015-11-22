@@ -72,6 +72,10 @@ tBodyGyroJerkMean
 
 The complete list of the 561 variables of each feature vector is available in 'features.txt'
 
+Notes:
+- Features are normalized and bounded within [-1,1]
+- Each feature vector is a row on the raw text file.
+
 Simplification of Variable Names
 
 In order to make the variable names more meaningful, I reformatted them to display the base measurement (e.g., Body Acceleration) and the domain (e.g., time or frequency). For example, instead of  tBodyAcc-mean()-X, the variable name was transformed to Body Acceleration (time) MeanX to reflect the variable estimated along the domain (time or frequency).
