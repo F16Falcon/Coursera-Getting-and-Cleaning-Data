@@ -7,10 +7,15 @@ Overview of the Data Set
 Experiments were performed for “Human Activity Recognition” on a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) while wearing a smartphone (Samsung Galaxy S II) on their waists. The experimenters captured 3-axial linear acceleration and 3-axial angular velocity measurements from the 30 volunteers. The resulting dataset was randomly partitioned into two sets, where 70% of the volunteers were selected for generating the training data and 30% the test data. 
 
 The data set is comprised of the following eight files:
+
 • activity_labels_txt: this file contains the six activities performed by the 30 subjects
+
 • subject_test.txt and subject_train.txt: these files contain numbers from 1 to 30 representing the group of 30 volunteers. The test file contains 9    subjects consistent with the 30% who generated the test data, while the train file contains 21 subjects who generated the data for the training data.
+
 • features.txt: this file contains the set of the 561 variable names that were estimated from experiment. (See section under Feature Selection for   additional information)
+
 • x_train.txt and x_test.txt: these files contain the measurements for each variable estimated in the features file obtained from the group of 30   subjects. It is decomposed into two groups to form training and test data.
+
 • y_train.txt and y_test.txt: these files contain the numbers from 1 through 6 corresponding to the six performance activities (e.g., 1 corresponds to   “WALKING”).  Together the two files contain 10,299 rows with numbers from 1 through 6.
 
 Feature Selection 
