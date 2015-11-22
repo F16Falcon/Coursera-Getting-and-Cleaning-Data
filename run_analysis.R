@@ -1,6 +1,6 @@
 # Point directory to the folder that houses the files and activates the data.table package
 setwd("C:/Users/Derek/Desktop/Assignment 3/Data/UCI HAR Dataset/data")
-library(data.table)
+library(data.table);library(dplyr)
 
 # Read all of the files that are to be merged
 features<-read.table("features.txt")
@@ -51,8 +51,9 @@ tidydat$V1[which(tidydat$V1==6)]<-as.character(factor(act[,2][6]))
 colnames(tidydat)[1]<-"Activity"
 
 # Eliminate unwanted columns and write the tidy data set to the working directory
-tidy<-data.table(tidydat)
-tidy[,89:563]=NULL
+tidydat<-data.table(tidydat)
+tidy1<-tbl_df(tidydat)
+tidy<-select(tidy1, 1:88)
 
 # Create a second independent tidy data set with the average of the extracted measurements and write the data set to the working directory
 tidy<-suppressWarnings(aggregate(tidy,list(Activity=tidy$Activity,Subject=tidy$Subject),mean))
