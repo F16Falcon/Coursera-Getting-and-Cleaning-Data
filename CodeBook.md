@@ -1,8 +1,8 @@
-Code Book
+## Code Book
 
 This Code Book describes the process used to collect and transform (rearrange and clean) data from eight files downloaded from a University of Cal, Irvine website (http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones). 
 
-Overview of the Data Set
+## Overview of the Data Set
 
 Experiments were performed for “Human Activity Recognition” on a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) while wearing a smartphone (Samsung Galaxy S II) on their waists. The experimenters captured 3-axial linear acceleration and 3-axial angular velocity measurements from the 30 volunteers. The resulting dataset was randomly partitioned into two sets, where 70% of the volunteers were selected for generating the training data and 30% the test data. 
 
@@ -18,7 +18,7 @@ The data set is comprised of the following eight files:
 
 • y_train.txt and y_test.txt: these files contain the numbers from 1 through 6 corresponding to the six performance activities (e.g., 1 corresponds to   “WALKING”).  Together the two files contain 10,299 rows with numbers from 1 through 6.
 
-Feature Selection 
+## Feature Selection 
 
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
 
@@ -81,11 +81,11 @@ Notes:
 - Features are normalized and bounded within [-1,1]
 - Each feature vector is a row on the raw text file.
 
-Simplification of Variable Names
+## Simplification of Variable Names
 
 In order to make the variable names more meaningful, I reformatted them to display the base measurement (e.g., Body Acceleration) and the domain (e.g., time or frequency). For example, instead of  tBodyAcc-mean()-X, the variable name was transformed to Body Acceleration (time) MeanX to reflect the variable estimated along the domain (time or frequency).
 
-Description of Results
+## Description of Results
 
 The result of the script is the production of a text file called "tidy." An initial data set is created by consolidating the eight files from the UCI website into a single, cleaned data set. This cleaned data set filters the data along the variable names that contain measurements of the mean or standard deviation.  The resulting data set contains 10,299 rows and 88 columns, where the first two columns display the “Activity” and “Subject,” respectively. The other columns display 86 of the 561 estimated variable names from the features.txt data set, which contain measures the mean or standard deviation.
 
