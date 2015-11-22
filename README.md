@@ -13,6 +13,7 @@ Notes:
 - I purposely avoided the use of loops to make the code viusally easy to follow, although this resulted in a script that   
   was less parsimonious, especially with respect to changing the variable names and mapping the activities.
 - The script created two Warning messages, neither of which had an effect on the results:
+
   (1) The script "tidy[,89:563]=NULL"  created the following warning:
       In alloc.col(x): Attempt to reduce allocation from 627 to 152 ignored. Can only increase allocation via shallow copy.        While not efficient this script eliminated the unwanted (variable names that did not include mean or standard deviation) columns.
 
@@ -22,5 +23,5 @@ Notes:
       In mean.default(X[[i]], ...): argument is not numeric or logical: returning NA
       This warning arose because the script "tidy[,89:563]=NULL" creates non-numeric/logical elements (e.g., NULL cols)
 
-Please refer to the Code Book for additional information about the underlying data, variable name changes, and tidy data file
+Please refer to the Code Book for additional information about the underlying data, variable name changes, and tidy data file.
 
