@@ -50,7 +50,7 @@ tidydat$V1[which(tidydat$V1==5)]<-as.character(factor(act[,2][5]))
 tidydat$V1[which(tidydat$V1==6)]<-as.character(factor(act[,2][6]))
 colnames(tidydat)[1]<-"Activity"
 
-# Eliminate unwanted columns and write the tidy data set to the working directory
+# Eliminate unwanted columns 
 tidydat<-data.table(tidydat)
 tidy1<-tbl_df(tidydat)
 tidy<-select(tidy1, 1:88)
