@@ -11,7 +11,7 @@ The data set is comprised of the following eight files:
 • subject_test.txt and subject_train.txt: these files contain numbers from 1 to 30 representing the group of 30 volunteers. The test file contains 9    subjects consistent with the 30% who generated the test data, while the train file contains 21 subjects who generated the data for the training data.
 • features.txt: this file contains the set of the 561 variable names that were estimated from experiment. (See section under Feature Selection for   additional information)
 • x_train.txt and x_test.txt: these files contain the measurements for each variable estimated in the features file obtained from the group of 30   subjects. It is decomposed into two groups to form training and test data.
-• y_train.txt and y_test.txt: these files contain the numbers from 1 through 6 corresponding to the six performance activities (e.g., 1 corresponds to   “WALKING”).  The two files contain 10,299 rows of number from 1 through 6.
+• y_train.txt and y_test.txt: these files contain the numbers from 1 through 6 corresponding to the six performance activities (e.g., 1 corresponds to   “WALKING”).  Together the two files contain 10,299 rows with numbers from 1 through 6.
 
 Feature Selection 
 
@@ -78,7 +78,7 @@ In order to make the variable names more meaningful, I reformatted them to displ
 
 Description of Results
 
-The result of the script is the production of a text file called "tidy." An initial data set is created by consolidating eight files from the UCI website into a single, cleaned data set. This cleaned data set filters the data along the variable names that contain measurements of the mean or standard deviation.  The resulting data set contains 10,299 rows and 88 columns, where the first two columns display the “Activity” and “Subject,” respectively. The other columns display 86 of the 561 estimated variable names from the features.txt data set, which measures the mean or standard deviation.
+The result of the script is the production of a text file called "tidy." An initial data set is created by consolidating the eight files from the UCI website into a single, cleaned data set. This cleaned data set filters the data along the variable names that contain measurements of the mean or standard deviation.  The resulting data set contains 10,299 rows and 88 columns, where the first two columns display the “Activity” and “Subject,” respectively. The other columns display 86 of the 561 estimated variable names from the features.txt data set, which contain measures the mean or standard deviation.
 
 The final desired data set is displayed in the tidy.txt file derived from the merged and cleaned data set mentioned above. The tidy.txt file contains the same 88 columns mentioned above, however, it takes the average of each variable for each activity and each subject, resulting in a file 180 rows and 88 columns.
 
