@@ -55,7 +55,7 @@ tidy<-data.table(tidydat)
 tidy[,89:563]=NULL
 
 # Create a second independent tidy data set with the average of the extracted measurements and write the data set to the working directory
-tidy<-aggregate(tidy,list(Activity=tidy$Activity,Subject=tidy$Subject),mean)
+tidy<-suppressWarnings(aggregate(tidy,list(Activity=tidy$Activity,Subject=tidy$Subject),mean))
 tidy[,4]=NULL
 tidy[,3]=NULL
 write.table(tidy,"tidy.txt", sep="\t", col.names = NA)
