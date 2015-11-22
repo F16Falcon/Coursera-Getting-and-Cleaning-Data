@@ -1,4 +1,4 @@
-# Point directory to the folder that houses the files and activates the data.table package
+# Point directory to the folder that houses the files and activates the data.table and dplyr packages
 setwd("C:/Users/Derek/Desktop/Assignment 3/Data/UCI HAR Dataset/data")
 library(data.table);library(dplyr)
 
