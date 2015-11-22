@@ -58,4 +58,4 @@ tidy[,89:563]=NULL
 tidy<-suppressWarnings(aggregate(tidy,list(Activity=tidy$Activity,Subject=tidy$Subject),mean))
 tidy[,4]=NULL
 tidy[,3]=NULL
-write.table(tidy,"tidy.txt", sep="\t", col.names = NA)
+write.table(tidy,"tidy.txt", sep="\t", row.names=FALSE)
